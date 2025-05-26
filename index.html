@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mallipeddy Sai Sireesha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        
+        /* Active nav link */
+        .nav-link.active {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        /* Project card hover effect */
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-500">Mallipeddy Sai Sireesha</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="nav-link hover:text-blue-500 transition">About</a>
+                    <a href="#projects" class="nav-link hover:text-blue-500 transition">Projects</a>
+                    <a href="#skills" class="nav-link hover:text-blue-500 transition">Skills</a>
+                    <a href="#experience" class="nav-link hover:text-blue-500 transition">Experience</a>
+                    <a href="#certifications" class="nav-link hover:text-blue-500 transition">Certifications</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="nav-link hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="nav-link hover:text-blue-500 transition">About</a>
+                    <a href="#projects" class="nav-link hover:text-blue-500 transition">Projects</a>
+                    <a href="#skills" class="nav-link hover:text-blue-500 transition">Skills</a>
+                    <a href="#experience" class="nav-link hover:text-blue-500 transition">Experience</a>
+                    <a href="#certifications" class="nav-link hover:text-blue-500 transition">Certifications</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeIn">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Sireesha</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">Software Developer</h2>
+                    <p class="text-lg mb-8 text-gray-600 max-w-lg">
+                        🎓 B.Tech graduate specializing in Artificial Intelligence and Data Science with strong expertise in machine learning and software development.
+🧠 Proven experience in building intelligent systems including sentiment analysis and recommendation engines.
+🚀 Committed to leveraging AI to solve real-world challenges and drive technological innovation.
+💡 Highly motivated, adaptable, and eager to contribute effectively in collaborative tech environments.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition shadow-lg">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border-2 border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg transition">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <!-- Add this in the <head> or just before </body> -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- Animated Lottie Developer Illustration -->
+<div class="md:w-1/2 flex justify-center animate-fadeIn delay-200">
+  <lottie-player
+    src="https://assets1.lottiefiles.com/packages/lf20_mjlh3hcy.json"
+    background="transparent"
+    speed="1"
+    style="width: 500px; height: 500px;"
+    loop
+    autoplay>
+  </lottie-player>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-1xl md:text-4xl font-bold text-center mb-16 animate-fadeIn">
+            About <span class="text-blue-500">Me</span>
+        </h2>
+        <div class="flex flex-col md:flex-row items-center">
+
+            <!-- Lottie Animation Replacing Image -->
+            <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center animate-fadeIn delay-100">
+                <lottie-player
+                    src="https://assets10.lottiefiles.com/packages/lf20_1pxqjqps.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 500px; height: 500px;"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </div>
+
+            <!-- Text Content -->
+            <div class="md:w-2/3 md:pl-12 animate-fadeIn delay-200">
+                <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                <p class="text-gray-600 mb-6">
+                    🤖 Develop intelligent systems using Machine Learning and Deep Learning<br><br>
+                    🎯 Create recommendation engines and sentiment analysis tools<br><br>
+                    🖥️ Build data-driven web applications using Streamlit and Python<br><br>
+                    📈 Analyze and visualize data to derive meaningful insights
+                </p>
+                <p class="text-gray-600 mb-8">
+                    My approach combines technical expertise with creative problem-solving to deliver high-quality solutions. I am committed to writing clean, efficient code and crafting intuitive user experiences. My specialization includes:
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <span>Deep Learning</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/Responsive-portfolio-main/My Resume - latest.pdf" download class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download CV
+                    </a>
+                    <a href="#contact" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-2 rounded-lg transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this script once in your HTML, ideally before closing </body> -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeIn">My <span class="text-blue-500">Projects</span></h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto animate-fadeIn delay-100">
+                Here are some of my recent projects. Each one was carefully crafted to solve specific problems and deliver value.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md animate-fadeIn delay-200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrNSoOlKoVeRmf1qmNlqm2Cjij9IB0p491w&s"
+                             alt="Project 1" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Movie Recommendation System</h3>
+                        <p class="text-gray-600 mb-4">
+A personalized movie recommendation system that suggests films based on user preferences, viewing history, and ratings using machine learning algorithms.                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Streamlit</span>
+
+                        </div>
+                        <div class="flex space-x-3">
+
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md animate-fadeIn delay-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Project 2" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Smart IVR System with Sentiment Analysis and Escalation Mechanism </h3>
+                        <p class="text-gray-600 mb-4">
+                            Implemented an Interactive Voice Response (IVR) system designed to analyze customer emotions in real-time.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Speech Recognition</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Sentiment Analysis</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Text-to-Speech Integration </span>
+                        </div>
+                        <div class="flex space-x-3">
+
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md animate-fadeIn delay-400">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" 
+                             alt="Project 3" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Weather Monitoring System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Real-time weather information for multiple cities, performs daily summaries, checks temperature alerts, and visualizes weather trends..
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">API</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
+                        </div>
+                        <div class="flex space-x-3">
+
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+   <section id="skills" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeIn">
+            My <span class="text-blue-500">Skills</span>
+        </h2>
+        <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto animate-fadeIn delay-100">
+            I've worked with a variety of technologies in the web development world. Here are my core competencies.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Technical Skills -->
+            <div class="animate-fadeIn delay-200">
+                <h3 class="text-xl font-semibold mb-6 flex items-center">
+                    <i class="fas fa-laptop-code text-blue-500 mr-3"></i> Technical
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Machine Learning</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Deep Learning</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>SQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="animate-fadeIn delay-500">
+                <h3 class="text-xl font-semibold mb-6 flex items-center">
+                    <i class="fas fa-server text-blue-500 mr-3"></i> Soft Skills
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Interpersonal skills</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>TeamWork</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Adaptability</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+   <!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeIn">
+      My <span class="text-blue-500">Journey</span>
+    </h2>
+    <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto animate-fadeIn delay-100">
+      My professional path and educational background that shaped my expertise.
+    </p>
+
+    <div class="flex flex-col md:flex-row">
+
+      <!-- Education -->
+      <div class="md:w-1/2 md:pr-8 mb-12 md:mb-0 animate-fadeIn delay-200">
+        <h3 class="text-2xl font-semibold mb-8 flex items-center">
+          <i class="fas fa-graduation-cap text-blue-500 mr-4 text-3xl"></i> Education
+        </h3>
+
+        <div class="relative">
+          <div class="border-l-2 border-blue-500 absolute h-full top-0 left-6"></div>
+
+          <!-- Education 1 -->
+          <div class="mb-8 pl-10 relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full left-6 -mt-1"></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-lg">Bachelor of Technology in Artificial Intelligence and Data Science</h4>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">2021 - 2025</span>
+              </div>
+              <p class="text-blue-500 mb-2">KL University</p>
+              <p class="text-gray-600">
+                Specialized in Software Engineering and Artificial Intelligence with a CGPA of 9.43 Thesis on Machine Learning applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="mb-8 pl-10 relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full left-6 -mt-1"></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-lg">Intermediate (Mathematics, Physics, and Chemistry)</h4>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">2019 - 2021</span>
+              </div>
+              <p class="text-blue-500 mb-2">Sri Chaitanya Junior College</p>
+              <p class="text-gray-600">
+                I completed my Intermediate (MPC) from Sri Chaitanya Junior College with a percentage of 96.6%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="pl-10 relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full left-6 -mt-1"></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-lg">Secondary School Certificate (SSC)</h4>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">2019</span>
+              </div>
+              <p class="text-blue-500 mb-2">Sri Chaitanya School</p>
+              <p class="text-gray-600">
+                I completed my SSC from Sri Chaitanya School with a CGPA of 9.7.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="md:w-1/2 md:pl-8 animate-fadeIn delay-300">
+        <h3 class="text-2xl font-semibold mb-8 flex items-center">
+          <i class="fas fa-briefcase text-blue-500 mr-4 text-3xl"></i> Experience
+        </h3>
+
+        <div class="relative">
+          <div class="border-l-2 border-blue-500 absolute h-full top-0 left-6"></div>
+
+          <!-- Experience 1 -->
+          <div class="mb-8 pl-10 relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full left-6 -mt-1"></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-lg">AI-ML Virtual Internship</h4>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">AICTE, EduSkills</span>
+              </div>
+              <p class="text-gray-600">
+                This experience allowed me to apply theoretical knowledge to real-world scenarios, enhancing my problem-solving skills.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="mb-8 pl-10 relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full left-6 -mt-1"></div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-lg">Training on Machine Learning</h4>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Internshala</span>
+              </div>
+              <p class="text-gray-600">
+                This 6-week online training program honed my skills in AI and data science principles, demonstrating my commitment to continuous learning.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Certifications Section -->
+<section id="certifications" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeIn">
+            Certifications <span class="text-yellow-500">🏆</span>
+        </h2>
+        <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto animate-fadeIn delay-100">
+            A set of certifications that reflect my expertise and commitment to professional growth.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fadeIn delay-200">
+            <!-- Card 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                <img src="https://img.icons8.com/color/96/python.png" alt="Python Logo" class="mx-auto mb-4 w-20 h-20">
+                <h4 class="text-xl font-semibold mb-2">Certified Associate in Python Programming</h4>
+                <p class="text-gray-600 text-sm mb-4">Certified in foundational Python programming and problem solving.</p>
+                <div class="flex justify-center space-x-2">
+                    <a href="PCAP - Progr-certificate.pdf" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Certification</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS Logo" class="mx-auto mb-4 w-20 h-20">
+                <h4 class="text-xl font-semibold mb-2">AWS ML Foundations</h4>
+                <p class="text-gray-600 text-sm mb-4">Completed machine learning training with AWS Academy.</p>
+                <div class="flex justify-center space-x-2">
+                    <a href="AWS ML FOUNDATIONS.pdf" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Certification</a>
+                </div>
+            </div>
+
+
+
+            <!-- Card 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                <img src="https://img.icons8.com/color/96/tensorflow.png" alt="TensorFlow Logo" class="mx-auto mb-4 w-20 h-20">
+                <h4 class="text-xl font-semibold mb-2">TensorFlow Developer Certificate</h4>
+                <p class="text-gray-600 text-sm mb-4">Built and deployed deep learning models using TensorFlow.</p>
+                <div class="flex justify-center space-x-2">
+                    <a href="TensorFlow Developer Certificate.pdf" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Certification</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                <img src="https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-2.jpg?width=672&height=448&name=ibm-logo-2.jpg" alt="IBM Logo" class="mx-auto mb-4 w-20 h-20">
+                <h4 class="text-xl font-semibold mb-2">IBM Python </h4>
+                <p class="text-gray-600 text-sm mb-4">Learned data handling, visualization, and analysis using Python.</p>
+                <div class="flex justify-center space-x-2">
+                    <a href="_IBM Python.pdf" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Certification</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                <img src="https://img.icons8.com/color/96/salesforce.png" alt="Salesforce Logo" class="mx-auto mb-4 w-20 h-20">
+                <h4 class="text-xl font-semibold mb-2">Salesforce AI Associate</h4>
+                <p class="text-gray-600 text-sm mb-4">Certified in using Salesforce AI tools and automation principles.</p>
+                <div class="flex justify-center space-x-2">
+                    <a href="Salesforce AI Associate.pdf" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Certification</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeIn">Get In <span class="text-blue-500">Touch</span></h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto animate-fadeIn delay-100">
+                Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+            </p>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-8 animate-fadeIn delay-200">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">2100080139ai.ds@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-600">6281347739</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Location</h4>
+                                    <p class="text-gray-600">Vijayawada</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-8 animate-fadeIn delay-300">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+                        <form id="contactForm">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">Mallipeddy Sai Sireesha</h3>
+                    <p class="max-w-xs text-gray-400">
+                        Passionate about innovation, emerging technologies, and building impactful digital experiences.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400">2100080139ai.ds@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mallipeddy Sai Sireesha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
